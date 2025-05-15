@@ -1,0 +1,137 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #d3e5d1;
+}
+
+header {
+    background-color: #2c4f50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.subtitle {
+    font-style: italic;
+    color: #ecf0f1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #345c5e;
+    padding: 1rem;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 1rem;
+    list-style: none;
+}
+
+nav a {
+    color: rgb(215, 225, 213);
+    text-decoration: none;
+}
+
+section {
+    padding: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.skill-category {
+    background: rgb(244, 251, 246);
+    padding: 0.5rem 1.5rem;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 100px;
+}
+
+/* Projects Section */
+.project-card {
+    background: rgb(247, 249, 247);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project-card a {
+    color: #2980b9;
+}
+
+/* Project Images */
+.project-images {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  
+.project-image {
+    width: auto;      
+    height: auto;      
+    max-height: 300px; 
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Contact Section */
+.contact-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact-links a {
+    padding: 0.5rem 1rem;
+    background: #29b971;
+    color: white;
+    /* border-radius: 5px; */
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #2c4f50;
+    color: rgb(221, 237, 217);
+}
+
+/* Design Page Styles */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.skill-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.video-sample {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.video-sample img {
+    max-width: 100%;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
