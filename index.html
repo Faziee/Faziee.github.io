@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - IT Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -23,8 +24,56 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I am a second-year IT student with a background in Graphic & Object design, now trying to blend creativity with technical skills in Object Oriented Programmig, Web and Game development, full-stack projects, and robotics. Currently building a text-to-speech system for a real client’s art installation and a gps and maps based applictaion in kotlin.</p>
-        <p>To see some of my prejcts <a href="projects.html">View all projects →</a></p>
+        <p>I am a second-year IT student who started in graphic design. These days I code just as much as I design, and I like that balance.</p>
+
+        <div class="focus-areas">
+            <h3>What I care about:</h3>
+            <ul>
+                <li>Making technology that feels human to use</li>
+                <li>Clean code that's maintainable</li>
+                <li>Solving actual problems, not just building for building's sake</li>
+                <li>User expereince also visually??</li>
+            </ul>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <div class="timeline-date">2023 - Present</div>
+                    <h3 class="timeline-title">IT Degree Program</h3>
+                    <p>Currently pursuing my degree in Information Technology with focus on software development and system design.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <div class="timeline-date">2020 - 2022</div>
+                    <h3 class="timeline-title">Graphic & Object Design</h3>
+                    <p>Developed strong design fundamentals through coursework and freelance projects.</p>
+                    <p><strong>Skills gained:</strong> Adobe Creative Suite, 3D modeling, UX principles</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <div class="timeline-date">2024</div>
+                    <h3 class="timeline-title">Won my first Hackathon</h3>
+                    <p>Built a blockchain rental contract system for a hackathon even hosted by Nhl Stenden and beeholder company</p>
+                    <p><strong>Technologies:</strong> HTML/CSS, JavaScript</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-item right">
+            <div class="timeline-content">
+                <div class="timeline-date">2025</div>
+                <h3 class="timeline-title">Current Projects</h3>
+                <p>Developing a text-to-speech system for an art installation and learning Kotlin for an andriod mobile application and working on fnsihing the 3d unity game for the univerity o us eforopen days.</p>
+                <p><strong>Technologies:</strong> Python, Kotlin, Android SDK, Jetpack Compose, Unity..</p>
+            </div>
+        </div>
+
+        <p>To see my more detilas on my projects, chekc out my  <a href="projects.html" class="cta-link">projects page →</a></p>
     </section>
 
     <section id="skills">
@@ -60,14 +109,6 @@
         </div>
     </section>
 
-    <!-- <section id="featured-project">
-        <h2>Featured Project</h2>
-        <div class="project-card">
-            <h3><a href="projects.html#project1">Project Title</a></h3>
-            <p>Short teaser description. <a href="projects.html">View all projects →</a></p>
-        </div>
-    </section> -->
-
     <section id="contact">
         <h2>Contact</h2>
         <div class="contact-links">
@@ -78,7 +119,8 @@
     </section>
 
     <footer>
-        <p>© 2025 Your Name. All rights reserved.</p>
+        <p>© 2025 F. Built with probably too much coffee and ♥</p>
     </footer>
+
 </body>
 </html>
