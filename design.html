@@ -1,70 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design & Media Skills | Your Name</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Portfolio | Your Name</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Design & Media</h1>
-        <p class="subtitle">Blending code with creativity</p>
+      <h1>Design Portfolio</h1>
+      <p class="subtitle">Visual storytelling through design</p>
     </header>
 
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="design.html">Design</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="design.html" class="active">Design</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
     </nav>
 
-    <section id="graphic-design">
-        <h2>Graphic & Object Design</h2>
-        <div class="skills-grid">
-            <div class="skill-item">
-                <h3>Adobe Creative Suite</h3>
-                <ul>
-                    <li><strong>Photoshop</strong>: Photo editing, compositing</li>
-                    <li><strong>Illustrator</strong>: Vector graphics, logos</li>
-                    <li><strong>InDesign</strong>: Layouts, print design</li>
-                    <li><strong>After Effects</strong>: Motion graphics</li>
-                </ul>
-            </div>
-            <div class="skill-item">
-                <h3>3D Design</h3>
-                <p>Modeling and texturing for games (used in <a href="projects.html#stendie">Stendie</a>).</p>
-                <ul>
-                    <li>Blender</li>
-                    <li>Unity (for asset integration)</li>
-                </ul>
-            </div>
+    <section id="design-skills">
+      <h2>Design Skills</h2>
+      <div class="skills-container">
+        <!-- Graphic Design -->
+        <div class="skill-card">
+          <i class="fas fa-paint-brush"></i>
+          <h3>Graphic Design</h3>
+          <ul>
+            <li>Print & Digital Design</li>
+            <li>Brand Identity</li>
+            <li>Publication Layout</li>
+            <li>Packaging Design</li>
+          </ul>
         </div>
+
+        <!-- UI/UX -->
+        <div class="skill-card">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>UI/UX Design</h3>
+          <ul>
+            <li>App Prototyping</li>
+            <li>Screen Design</li>
+            <li>Design Systems</li>
+          </ul>
+        </div>
+
+        <!-- Video & Editing -->
+        <div class="skill-card">
+          <i class="fas fa-video"></i>
+          <h3>Video Editing</h3>
+          <ul>
+            <li>Video Editing</li>
+            <li>Cutting & Transitions</li>
+            <li>Subtitles & Effects</li>
+          </ul>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-card">
+          <i class="fas fa-tools"></i>
+          <h3>Tools</h3>
+          <ul>
+            <li>Adobe Creative Suite</li>
+            <li>Figma</li>
+            <li>Filmora/Capcut</li>
+            <li>Canva</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section id="video-editing">
-        <h2>Video Editing & Marketing</h2>
-        <div class="project-card">
-            <h3>Freelance Editing for University</h3>
-            <p><strong>Tools:</strong> Premiere Pro, DaVinci Resolve</p>
-            <p>Edited promotional videos for events, social media, and campaigns.</p>
-            <!-- Add a sample video embed or screenshot -->
-            <div class="video-sample">
-                <img src="images/video-editing-screenshot.jpg" alt="Video Editing Sample">
-                <a href="https://vimeo.com/yourvideo" target="_blank">View Sample →</a>
-            </div>
+    <section id="design-gallery">
+      <h2>Design Showcase</h2>
+      <div class="gallery-filter">
+        <button class="filter-btn active" data-filter="all">All Work</button>
+        <button class="filter-btn" data-filter="graphic">Graphic Design</button>
+        <button class="filter-btn" data-filter="corporate">Corporate</button>
+        <button class="filter-btn" data-filter="ui">UI/UX</button>
+        <button class="filter-btn" data-filter="publication">
+          Publications
+        </button>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Album Cover Design -->
+        <div class="gallery-item graphic" data-category="graphic">
+          <div class="document-preview">
+            <img src="images/cover/cover.png" alt="Album Cover Design" />
+          </div>
+          <div class="item-info">
+            <h3>Album Cover Design</h3>
+            <p>CD packaging + moodboard</p>
+            <button class="view-btn" onclick="openPdf('pdfs/album-cover.pdf')">
+              View Full PDF
+            </button>
+          </div>
         </div>
+
+        <!-- Corporate Design -->
+        <div class="gallery-item corporate" data-category="corporate">
+          <div class="document-preview">
+            <img
+              src="images/cover/cooperate-design.png"
+              alt="Corporate Design"
+            />
+          </div>
+          <div class="item-info">
+            <h3>Corporate Identity</h3>
+            <p>3rd year protject for an exhibition</p>
+            <button
+              class="view-btn"
+              onclick="openPdf('pdfs/cooperate-design.pdf')"
+            >
+              View Full PDF
+            </button>
+          </div>
+        </div>
+
+        <!-- Design Manual -->
+        <div class="gallery-item corporate" data-category="corporate">
+          <div class="document-preview">
+            <img src="images/cover/design-manual.png" alt="Design Manual" />
+          </div>
+          <div class="item-info">
+            <h3>Corporate Design Manual</h3>
+            <p>Brand guidelines</p>
+            <button
+              class="view-btn"
+              onclick="openPdf('pdfs/design-manual.pdf')"
+            >
+              View Full PDF
+            </button>
+          </div>
+        </div>
+
+        <!-- Leporello Design -->
+        <div class="gallery-item corporate" data-category="corporate">
+          <div class="document-preview">
+            <img src="images/cover/leporello.png" alt="Leporello Design" />
+          </div>
+          <div class="item-info">
+            <h3>Leporello Design</h3>
+            <p>Foldable brochure on Typography</p>
+            <button class="view-btn" onclick="openPdf('pdfs/Leporello.pdf')">
+              View Full PDF
+            </button>
+          </div>
+        </div>
+
+        <!-- Calendar Design -->
+        <div class="gallery-item publication" data-category="publication">
+          <div class="document-preview">
+            <img src="images/cover/calendar.png" alt="Calendar Design" />
+          </div>
+          <div class="item-info">
+            <h3>Reset Calendar</h3>
+            <p>2nd year project</p>
+            <button
+              class="view-btn"
+              onclick="openPdf('pdfs/calendar-design.pdf')"
+            >
+              View Full PDF
+            </button>
+          </div>
+        </div>
+
+        <!-- Calendar Documentation -->
+        <div class="gallery-item publication" data-category="publication">
+          <div class="document-preview">
+            <img
+              src="images/cover/calendar-docs.png"
+              alt="Calendar Documentation"
+            />
+          </div>
+          <div class="item-info">
+            <h3>Calendar Documentation</h3>
+            <p>Process and concept</p>
+            <button class="view-btn" onclick="openPdf('pdfs/calendar-doc.pdf')">
+              View Full PDF
+            </button>
+          </div>
+        </div>
+
+        <!-- Layout Design -->
+        <div class="gallery-item graphic" data-category="graphic">
+          <div class="document-preview">
+            <img src="images/cover/layout-design.png" alt="Layout Design" />
+          </div>
+          <div class="item-info">
+            <h3>Poster Layout</h3>
+            <p>Typography & grid system</p>
+            <button
+              class="view-btn"
+              onclick="openPdf('pdfs/layout-plakats.pdf')"
+            >
+              View Full PDF
+            </button>
+          </div>
+        </div>
+
+        <!-- Figma Prototype -->
+        <div class="gallery-item ui" data-category="ui">
+          <div class="document-preview">
+            <img src="images/cover/figma.png" alt="Figma Prototype" />
+          </div>
+          <div class="item-info">
+            <h3>Figma App Prototype</h3>
+            <p>UI orgignally made in Adobe XD</p>
+            <a
+              href="https://www.figma.com/proto/efZKKZbQtilsSRm1P0oDz9/2ndHand?node-id=0-1&t=HOHZLtZBc4wwIrcy-1"
+              class="view-btn"
+              target="_blank"
+              >View Prototype</a
+            >
+          </div>
+        </div>
+
+        <!-- Art Portfolio -->
+        <div class="gallery-item graphic" data-category="graphic">
+          <div class="document-preview">
+            <img src="images/cover/portfolio.png" alt="Art Portfolio" />
+          </div>
+          <div class="item-info">
+            <h3>Art Portfolio</h3>
+            <p>1st year collection</p>
+            <button
+              class="view-btn"
+              onclick="openPdf('pdfs/art-portfolio.pdf')"
+            >
+              View Full PDF
+            </button>
+          </div>
+        </div>
+
+        <!-- Poster Design -->
+        <div class="gallery-item graphic" data-category="graphic">
+          <div class="document-preview">
+            <img src="images/cover/poster-design.jpg" alt="Poster Design" />
+          </div>
+          <div class="item-info">
+            <h3>Poster Design</h3>
+            <p>Typography & layout</p>
+            <button class="view-btn" onclick="openPdf('pdfs/plakat.pdf')">
+              View Full PDF
+            </button>
+          </div>
+        </div>
+
+        <!-- Screen Design -->
+        <div class="gallery-item ui" data-category="ui">
+          <div class="document-preview">
+            <img src="images/cover/toolkit.png" alt="Screen Design" />
+          </div>
+          <div class="item-info">
+            <h3>Screen Design</h3>
+            <p>Moodboard + toolkit</p>
+            <button
+              class="view-btn"
+              onclick="openPdf('pdfs/screen-design.pdf')"
+            >
+              View Full PDF
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="design-philosophy">
-        <h2>Design Philosophy</h2>
-        <p><em>"I bridge technical functionality with aesthetic clarity—whether in UI design, game assets, or marketing materials."</em></p>
-    </section>
+    <!-- PDF Viewer Modal -->
+    <div id="pdf-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closePdf()">&times;</span>
+        <div class="pdf-container">
+          <iframe id="pdf-viewer" frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
 
     <footer>
-        <p>© 2024 Your Name. All rights reserved.</p>
+      <p>© 2024 Your Name. All rights reserved.</p>
     </footer>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

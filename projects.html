@@ -9,7 +9,7 @@
 <body>
     <header>
         <h1>My Projects</h1>
-        <p class="subtitle">Hands-on IT work</p>
+        <p class="subtitle">Practical applications of my skills</p>
     </header>
 
     <nav>
@@ -22,76 +22,146 @@
     </nav>
 
     <section id="projects">
-        <div class="project-card" id="stendie">
-            <h2>Stendie – 3D Unity Game</h2>
-            <div class="project-content">
-              <div class="project-details">
-                <p><strong>Role:</strong> Gameplay Developer, 3D Designer</p>
-                <p><strong>Tech:</strong> Unity, C#, Blender (for assets)</p>
-                <p><strong>Description:</strong> A university project so successful that the faculty commissioned our team to polish and deploy it campus-wide. Focused on intuitive controls and immersive environments.</p>
-                <a href="https://github.com/Faziee/StendenScape" target="_blank">GitHub Repo</a> | 
-                <a href="https://youtube.com/your-gameplay-video" target="_blank">Gameplay Video</a>
-              </div>
-              <img src="images/stendie-screenshot.png" alt="Stendie Game Screenshot" class="project-image">
+        <div class="project-card featured">
+            <div class="project-header">
+                <h2>StendenScape – 3D University Game</h2>
+                <span class="project-badge">Featured</span>
             </div>
-          </div>
-
-        <!-- Project 2 -->
-        <div class="project-card" id="netflix-api">
-            <h2>Streaming Platform API</h2>
             <div class="project-content">
-              <div class="project-details">
-                <p><strong>Role:</strong> Backend Developer (API Logic)</p>
-                <p><strong>Tech:</strong> .NET, Entity Framework Core, SQL</p>
-                <p><strong>Description:</strong> Built a RESTful API mimicking Netflix’s core features, with user auth and database integration. Demonstrated clean architecture and scalability.</p>
-                <a href="https://github.com/Faziee/DataProcessingBS" target="_blank">GitHub Repo</a>
-              </div>
-              <img src="images/api-screenshot.png" alt="API Code Preview" class="project-image">
-            </div>
-          </div>
-
-          <div class="project-card" id="tts-art">
-            <h2>Interactive Art Installation (Arcada Festival)</h2>
-            <div class="project-content">
-              <div class="project-details">
-                <p><strong>Role:</strong> Lead Developer</p>
-                <p><strong>Tech:</strong> Python (Speech Synthesis), Hardware Integration</p>
-                <p><strong>Description:</strong> Developing a system for an artist to convert visitor input into spoken poetry at a major festival. Launching May 2024.</p>
-                <a href="#tts-art" class="coming-soon">Live Demo Coming Soon</a>
-              </div>
-              <img src="images/art-installation-sketch.jpg" alt="Installation Concept" class="project-image">
-            </div>
-          </div>
-
-          <div class="project-card" id="battlebot">
-            <h2>BattleBot – Arduino-Powered Robot</h2>
-            <div class="project-content">
-              <div class="project-details">
-                <p><strong>Role:</strong> Co-developer (Coding & Hardware)</p>
-                <p><strong>Tech:</strong> Arduino, C++, Sensors</p>
-                <p><strong>Description:</strong> Collaborated with a peer to build and code a robot that won a timed race. Integrated motor controls and obstacle detection.</p>
-                <a href="https://github.com/XxJosephineStensgaardxX/vaardigheidsprobleem" target="_blank">GitHub Repo</a> | 
-                <a href="https://youtu.be/ibRHOFOGz8s?si=_2kdrazOgnO0z_Lt" target="_blank">Race Video</a>
-                <div class="project-images">
-                  <img src="images/BattelBotRace.jpeg" alt="BattleBot Photo" class="project-image">
-                  <img src="images/BattelBotPrize.jpeg" alt="BattleBot Photo" class="project-image">
-                  <img src="images/BattelBot.jpeg" alt="BattleBot Photo" class="project-image">
+                <img src="images/Stendenie.png" alt="StendenGame Game Screenshot" class="project-image">
+                <div class="project-details">
+                    <div class="project-meta">
+                        <div><strong>Role:</strong> Gameplay Developer & 3D Designer</div>
+                        <div><strong>Technologies:</strong> Unity, C#, Blender</div>
+                        <div><strong>Status:</strong> In development for university deployment</div>
+                    </div>
+                    <p class="project-description">Developed a 3D exploration game from scratch based on NHL Stenden University for incoming students to interact with before their arrival. The project was so well-received by supervisors that it was commissioned for actual deployment by the university. Currently working on finalizing the deployment version before summer.</p>
+                    <div class="project-links">
+                        <a href="https://youtube.com/your-gameplay-video" target="_blank" class="project-link">See Demo</a>
+                        <span class="coming-soon">Deployment Coming Soon</span>
+                    </div>
                 </div>
-          </div>
+            </div>
+        </div>
 
-          <div class="project-card">
-            <h3>Hackathon Winner – [Event Name]</h3>
-            <p>Developed [solution] under time constraints using [tech]. Secured 1st place among 20+ teams.</p>
-            <a href="https://devpost.com/your-project" target="_blank">Devpost Link</a>
-          </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Streaming Platform API</h3>
+                </div>
+                <div class="project-content">
+                    <div class="project-details">
+                        <div class="project-meta">
+                            <div><strong>Role:</strong> Backend Developer</div>
+                            <div><strong>Technologies:</strong> .NET, Entity Framework, SQL</div>
+                        </div>
+                        <p class="project-description">
+                            Developed a RESTful API inspired by Netflix, featuring user authentication with API keys and secure CRUD operations. Integrated a SQL database via Entity Framework to manage media content, user accounts, and watchlists efficiently.
+                        </p>
+                        <div class="project-links">
+                          <a href="https://github.com/Faziee/DataProcessingBS" target="_blank" class="project-link">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-          <div class="project-card">
-            <h3>Book Recommendation App (In Progress)</h3>
-            <p>Personal project using [Java/React/etc.] to help users discover books based on mood.</p>
-            <a href="#book-app" class="coming-soon">GitHub Coming Soon</a>
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Interactive Art Installation</h3>
+                </div>
+                <div class="project-content">
+                    <div class="project-details">
+                        <div class="project-meta">
+                            <div><strong>Role:</strong> Developer</div>
+                            <div><strong>Technologies:</strong> Python, Hardware, HTML/CSS, PostgreSQL</div>
+                        </div>
+                        <p class="project-description">Developing a text-to-speech system for <a class="cta-link" href="https://arcadia.frl/agenda/184256/kijkmannen">ARCADIA 2025</a> that scrapes real-time data from social media based on hashtags and plays it through an interactive art installation. Uses sentiment analysis to filter and flag social media posts.</p>                       
+                        <span class="coming-soon">Demo Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-header">
+                  <h3>BookNook – Reading Tracker</h3>
+              </div>
+              <div class="project-content">
+                  <div class="project-details">
+                      <div class="project-meta">
+                          <div><strong>Role:</strong> Full-stack Developer</div>
+                          <div><strong>Technologies:</strong> React, Node.js, Tailwind CSS</div>
+                      </div>
+                      <p class="project-description">
+                        A full-stack reading tracker and book recommendation app that lets users log progress, write reviews, and get personalized suggestions. Built with React and styled using Tailwind, it emphasizes clean UX and user engagement.
+                    </p>                    
+                      <div class="project-links">
+                        <a href="https://github.com/Faziee/booknook" target="_blank" class="project-link">View Code</a>
+                      <a href="https://booknook-six.vercel.app/" target="_blank" class="project-link">Go To Website</a>
+                    </div>
+                  </div>
+              </div>
+           </div>
+
+           <div class="project-card">
+            <div class="project-header">
+                <h3>StorySpots – Android App</h3>
+            </div>
+            <div class="project-content">
+                <div class="project-details">
+                    <div class="project-meta">
+                        <div><strong>Role:</strong> Full-stack Developer</div>
+                        <div><strong>Technologies:</strong> Kotlin, Jetpack Compose, Firebase, Mapbox</div>
+                    </div>
+                    <p class="project-description">An Android-based map app where users can drop multimedia "story pins" tied to specific locations. Whether shared privately with friends or publicly with the world, each pin lets people post photos, comments, or memories connected to real places. Built using Mapbox for rich mapping features and Firebase for real-time data and authentication. Currently in development with planned features like location-based notifications and collaborative mapping</p>
+                    <div class="project-links">
+                      <a href="https://github.com/Faziee/StorySpots" target="_blank" class="project-link">View Code</a>
+                      <span class="coming-soon">Demo Coming Soon</span>
+                  </div>
+                </div>
+            </div>
+         </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>BattleBot – Arduino Robot</h3>
+                </div>
+                <div class="project-content">
+                    <div class="project-details">
+                        <div class="project-meta">
+                            <div><strong>Role:</strong> Robotics Co-developer</div>
+                            <div><strong>Technologies:</strong> Arduino, C++, Sensor Fusion</div>
+                        </div>
+                        <p class="project-description">
+                        Co-developed a competitive Arduino robot for a multi-stage relay, integrating line-following, maze-solving, and object manipulation. Used C++ and sensor fusion techniques for autonomous decision-making and environment interaction.
+                        </p>
+                        
+                        <div class="project-links">
+                            <a href="https://github.com/XxJosephineStensgaardxX/vaardigheidsprobleem" target="_blank" class="project-link">View Code</a>
+                            <a href="https://youtu.be/ibRHOFOGz8s?si=_2kdrazOgnO0z_Lt" target="_blank" class="project-link">Watch Video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-header">
+                  <h3>JabberPoint – Java Project</h3>
+              </div>
+              <div class="project-content">
+                  <div class="project-details">
+                      <div class="project-meta">
+                          <div><strong>Role:</strong> Software Developer</div>
+                          <div><strong>Technologies:</strong> Java, Design Patterns, CI/CD</div>
+                      </div>
+                      <p class="project-description">A Java-based presentation software implementing various design patterns (Factory, Command, Composite) with a complete CI/CD pipeline. Focused on clean architecture and test-driven development principles.</p>
+                      <div class="project-links">
+                          <a href="https://github.com/Jordana-GC/Jabberpoint-Worldwides.git" target="_blank" class="project-link">View Code</a>
+                      </div>
+                  </div>
+              </div>
           </div>
+            
     </section>
-
     <footer>
         <p>© 2024 Your Name. All rights reserved.</p>
     </footer>
