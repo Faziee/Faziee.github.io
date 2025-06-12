@@ -1,6 +1,6 @@
 # My Portfolio
 
-Live URL: [https://yourusername.github.io](https://Faziee.github.io)
+Live URL: [https://Faziee.github.io](https://Faziee.github.io)
 
 ## What's Inside
 - Homepage with skills timeline
